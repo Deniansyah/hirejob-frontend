@@ -19,9 +19,7 @@ const Home = () => {
 
   React.useEffect(() => {
     axios
-      .get(
-        `https://fw12-backend-collab.vercel.app/users/skill?page=${page}&search=${search}&sortBy=${sortBy}&status=${status}`
-      )
+      .get(`https://hirejob-backend.vercel.app/users/skill?page=${page}&search=${search}&sortBy=${sortBy}&status=${status}`)
       .then((data) => data.data)
       .then((res) => {
         pageAmount(res.pageInfo.totalData);
