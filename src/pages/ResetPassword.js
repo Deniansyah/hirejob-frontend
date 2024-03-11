@@ -1,7 +1,6 @@
 import React from "react";
 import Left from "../components/authComponents/Left";
 import { useNavigate } from "react-router-dom";
-import http from "../helpers/http";
 import { Formik, Form, Field } from "formik";
 import YupPassword from "yup-password";
 import * as Yup from "yup";
@@ -16,8 +15,6 @@ const ResetPassword = () => {
 
   const forgotPassword = async (value) => {
     const email = value.email;
-
-    const { data } = await http().post("/auth/forgotPassword", { email });
 
     navigate("/request-reset", { state: email });
   };

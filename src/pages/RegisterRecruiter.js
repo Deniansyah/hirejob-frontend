@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
 import { registerRecruiterAction } from "../redux/actions/auth";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import YupPassword from "yup-password";
 import * as Yup from "yup";
 

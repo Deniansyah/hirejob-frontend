@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import AssideNav from "../AssideNav";
 import { IoMdCloudUpload, IoIosResize } from "react-icons/io";
 import { BsImage } from "react-icons/bs";
@@ -11,15 +11,10 @@ import { getProfileAction } from "../../../../../redux/actions/profile";
 export default function Portfolio() {
   const token = useSelector((state) => state.auth.token);
   const { id } = jwt_decode(token);
-  const [isLoadingPicture, setIsLoadingPicture] = useState(false);
+  const [, setIsLoadingPicture] = useState(false);
   const [message, setMessage] = useState("");
 
   const dispatch = useDispatch();
-
-  const inputFile = useRef(null);
-  const openFile = () => {
-    inputFile.current.click();
-  };
 
   const updatePortofolio = async (e) => {
     e.preventDefault();

@@ -9,7 +9,7 @@ import { getProfileAction } from "../../../../redux/actions/profile";
 export default function Profile({ dataUser }) {
   const { token } = useSelector((state) => state.auth);
 
-  const [isLoadingPicture, setIsLoadingPicture] = useState(false);
+  const [, setIsLoadingPicture] = useState(false);
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();

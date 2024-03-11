@@ -14,7 +14,7 @@ export default function Profile(props) {
 
   const { picture } = useSelector((state) => state.profile);
   const { token } = useSelector((state) => state.auth);
-  const [isLoadingPicture, setIsLoadingPicture] = useState(false);
+  const [, setIsLoadingPicture] = useState(false);
   const [message, setMessage] = useState("");
 
   const dispatch = useDispatch();

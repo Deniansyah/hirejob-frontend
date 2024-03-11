@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import axios from "axios";
 
@@ -26,7 +27,7 @@ const Home = () => {
         setProfile(res.results);
       });
     console.log(profile);
-  }, [page, search, sortBy, status]);
+  }, [page, profile, search, sortBy, status]);
 
   const searchUser = () => {
     const searchValue = document.querySelector("#search-input").value;

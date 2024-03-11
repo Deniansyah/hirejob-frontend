@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Landing from "./Landing";
 import Home from "./Home";
-import Sort from "./Sort";
 import Login from "./Login";
 import Register from "./Register";
 import ResetPassword from "./ResetPassword";
@@ -19,7 +18,6 @@ import Hire from "./Hire";
 import Chat from "./Chat";
 
 import PrivateRoute from "./middlewareComponent/PrivateRoute";
-import PrivateRouteCompany from "./middlewareComponent/PrivateRouteCompany";
 
 const Main = () => {
   return (

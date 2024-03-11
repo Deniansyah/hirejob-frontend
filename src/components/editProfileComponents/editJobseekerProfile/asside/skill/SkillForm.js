@@ -1,9 +1,7 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import http from "../../../../../helpers/http";
 import { getSkillsAction } from "../../../../../redux/actions/profile";
-import AssideNav from "../AssideNav";
-import Skill from "./Skill";
 
 export default function SkillForm() {
   const token = useSelector((state) => state.auth.token);
